@@ -1,0 +1,14 @@
+title: Houston Lewis
+email: houstonhvrd@gmail.com
+description: >-
+  Full Stack Developer
+baseurl: ""
+url: ""
+
+# Social media links
+github: https://github.com/houstonlws
+linkedin: https://www.linkedin.com/in/houstonlewis/
+
+# Build settings
+plugins:
+  - jekyll-feed

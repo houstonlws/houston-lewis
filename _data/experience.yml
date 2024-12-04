@@ -1,0 +1,88 @@
+- date: 06/2024 – Present
+  title: Full Stack Developer
+  company: Infosys
+  location: Raleigh NC
+  description: At Infosys I have the opportunity to work with a variety of clients and projects across many different domains. Primarily I work with microservice-oriented projects as a full stack developer. I am constantly learning new technologies and frameworks to keep up with the ever-changing tech landscape. I am also working on personal projects to apply new knowledge and explore new ideas.
+  technologies:
+    - name: Java
+      class: devicon-java-plain
+    - name: SQL
+      class: devicon-mysql-plain
+    - name: Spring Boot
+      class: devicon-spring-plain
+    - name: TypeScript
+      class: devicon-typescript-plain
+    - name: AWS
+      class: devicon-amazonwebservices-plain
+    - name: Vue3
+      class: devicon-vuejs-plain
+    - name: Firebase
+      class: devicon-firebase-plain
+    - name: HTML
+      class: devicon-html5-plain
+    - name: CSS
+      class: devicon-css3-plain
+
+- date: 06/2021 – 06/2024
+  title: Full Stack Developer
+  company: Infosys - Florida Power & Light
+  location: Miami FL
+  description: At my time at FPL, I had the opportunity to work on several projects that helped me grow as a developer. I worked in a microservice-oriented architecture to create and implement several new features and programs for their web application. I also had the opportunity to work with an experienced and supportive team that helped me learn and grow along the way.
+  technologies:
+    - name: Java
+      class: devicon-java-plain
+    - name: Spring Boot
+      class: devicon-spring-plain
+    - name: Vue2
+      class: devicon-vuejs-plain
+    - name: JavaScript
+      class: devicon-javascript-plain
+    - name: HTML
+      class: devicon-html5-plain
+    - name: CSS
+      class: devicon-css3-plain
+    - name: AWS
+      class: devicon-amazonwebservices-plain-wordmark
+    - name: Microservices
+      class: fa fa-server
+
+- date: 02/2021 – 06/2021
+  title: Full Stack Developer
+  company: Revature
+  location: Durham NC
+  description: At Revature I attended a 12-week bootcamp where I learned the fundamentals of object-oriented programming and full stack development. I worked on several projects that included a variety of technologies and frameworks. It was here that the concept of continuous learning and development was first introduced to me, and I continue to apply that concept to my life today.
+  technologies:
+    - name: Java
+      class: devicon-java-plain
+    - name: SQL
+      class: devicon-mysql-plain
+    - name: Spring Boot
+      class: devicon-spring-plain
+    - name: JDBC
+      class: devicon-jdbc-plain
+    - name: Junit
+      class: devicon-junit-plain
+    - name: Angular
+      class: devicon-angularjs-plain
+    - name: TypeScript
+      class: devicon-typescript-plain
+    - name: AWS
+      class: devicon-amazonwebservices-plain
+    - name: TDD
+      class: fa fa-flask
+    - name: REST
+      class: fa fa-wifi
+    - name: Microservices
+      class: fa fa-server
+
+- date: 06/2019 – 02/2021
+  title: Graphic Designer
+  company: North Carolina Central University
+  location: Durham NC
+  description: At NCCU I had the opportunity to run and manage the Central Graphics Print Shop on campus. I was responsible for all print services and customer interactions. I was able to work on projects that varied greatly in scale and complexity. I was also able to produce materials in a variety of mediums both print and digital.
+
+- date: 05/2018 – 06/2019
+  title: Print Specialist
+  company: Office Depot
+  location: Durham NC
+  description: At Office Depot I was responsible for all print services and customer interactions in the Copy and Print Center. I completed a variety of projects that included business cards, banners, posters, and other print materials. I was also responsible for maintaining the print equipment and inventory.

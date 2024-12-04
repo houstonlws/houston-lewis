@@ -1,0 +1,49 @@
+.panel
+
+    background-color: $bg-1
+    padding: 25px 20px
+    border-radius: $border-radius
+    border: $border-1
+
+.app
+
+    display: flex
+    flex-direction: row
+    justify-content: center
+    max-width: 1200px
+    margin: 35px auto
+    padding-bottom: 35px
+    gap: 25px
+
+    &-content
+
+        width: 75%
+        position: relative
+        display: flex
+        flex-direction: column
+        gap: 25px
+
+    @media (max-width: $bp-xl)
+
+        flex-direction: column
+        align-items: center
+
+        &-content
+            width: 950px
+
+    @media (max-width: $bp-lg)
+
+        &-content
+            width: 700px
+
+    @media (max-width: $bp-md)
+
+        &-content
+            width: 500px
+
+    @media (max-width: $bp-sm)
+
+        margin: 15px
+
+        &-content
+            width: 100%

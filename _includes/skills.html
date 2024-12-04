@@ -1,0 +1,14 @@
+<div class="skills panel">
+  <h2>Skills</h2>
+  <hr />
+  <div class="skills-list">
+    {% for skill in site.data.skills %}
+    <div class="skills-item">
+      <div class="skills-item-icon">
+        <i class="{{ skill.class }}"></i>
+      </div>
+      <p class="skills-item-label">{{ skill.name }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

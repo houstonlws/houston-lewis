@@ -1,0 +1,42 @@
+<article class="experience panel" id="content">
+  <h2>Experience</h2>
+  <hr />
+  <div class="experience-expand" id="expander">Show More</div>
+  <ol class="experience-list">
+    {% for job in site.data.experience %}
+    <li class="experience-item">
+      <div class="experience-item-heading">
+        <h4>{{job.title}}</h4>
+        <h4 class="subtitle">{{job.company}}</h4>
+        <h4 class="subtitle">{{job.date}}</h4>
+      </div>
+      <div class="experience-item-body">
+        {% if job.description %}
+        <h5 class="experience-item-label">Description</h5>
+        <ul class="experience-item-description">
+          {{ job.description }}
+        </ul>
+        {% endif %} {% if job.roles %}
+        <h5 class="experience-item-label">Roles & Duties</h5>
+        <ul class="experience-item-roles">
+          {% for role in job.roles %}
+          <li class="experience-item-roles-item">{{role}}</li>
+          {% endfor %}
+        </ul>
+        {% endif %} {% if job.technologies %}
+        <h5 class="experience-item-label">Technologies</h5>
+        <ul class="experience-item-technologies">
+          {% for technology in job.technologies %}
+          <li class="experience-item-technologies-item">
+            <i class="{{technology.class}}"></i>
+            <p style="margin-bottom: 0">{{technology.name}}</p>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</article>
+<script src="/assets/js/experience.js"></script>

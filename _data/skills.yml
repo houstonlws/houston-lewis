@@ -1,0 +1,24 @@
+- name: Java
+  class: devicon-java-plain
+- name: Spring Boot
+  class: devicon-spring-plain
+- name: JavaScript
+  class: devicon-javascript-plain
+- name: TypeScript
+  class: devicon-typescript-plain
+- name: React
+  class: devicon-react-original
+- name: Vue
+  class: devicon-vuejs-plain
+- name: Node.js
+  class: devicon-nodejs-plain
+- name: SQL
+  class: devicon-mysql-plain
+- name: AWS
+  class: devicon-amazonwebservices-plain-wordmark
+- name: Docker
+  class: devicon-docker-plain
+- name: HTML
+  class: devicon-html5-plain
+- name: CSS
+  class: devicon-css3-plain

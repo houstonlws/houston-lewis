@@ -1,0 +1,18 @@
+list:
+  - name: Email
+    value: houstonhvrd@gmail.com
+    class: fa fa-envelope
+  - name: Location
+    value: Raleigh, NC
+    class: fa fa-map-marker
+
+social:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/houstonlewis
+    class: fa-brands fa-linkedin
+  - name: GitHub
+    url: https://github.com/houstonlws
+    class: fa-brands fa-github
+  - name: Email
+    url: mailto:houstonhvrd@gmail.com
+    class: fa fa-envelope

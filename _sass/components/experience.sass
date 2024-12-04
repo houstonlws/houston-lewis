@@ -1,0 +1,146 @@
+.experience
+    max-height: 500px
+    overflow-y: hidden
+    position: relative
+    transition: max-height 0.5s ease
+    color: $text-color-4
+
+    &-list
+        display: flex
+        flex-direction: column
+        list-style-type: none
+        margin: 25px auto 75px auto
+        padding-left: 35px
+
+    &-expand
+        position: absolute
+        width: 100%
+        background-color: $bg-1
+        border-top: $border-1
+        text-align: center
+        left: 0
+        bottom: 0
+        z-index: 10
+        padding: 10px 0
+        cursor: pointer
+
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 45px
+            height: 100px
+            width: 100%
+            background: linear-gradient(#00000000, $bg-1)
+            z-index: -1
+            pointer-events: none
+
+        &:hover
+            background-color: $bg-2
+
+    &-item
+        position: relative
+        margin-bottom: 1rem
+        display: flex
+        background-color: $bg-2
+        border-radius: $border-radius
+        padding: 25px
+        box-shadow: $box-shadow-lg
+        @media (max-width: $bp-lg)
+            flex-direction: column
+            gap: 10px
+        &::before
+            content: ''
+            position: absolute
+            left: -35px
+            top: 60px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background-color: $text-color
+            box-shadow: $box-shadow-lg
+
+        &::after
+            content: ''
+            position: absolute
+            left: -30px
+            top: 70px
+            width: 1px
+            height: calc(100% + 10px)
+            background-color: $border-color
+            box-shadow: $box-shadow-lg
+
+        &:last-child::after
+            content: none
+
+        &-heading
+            padding: 5px 10px
+            min-width: 250px
+            width: 250px
+            background: $bg-3
+            border-radius: $border-radius
+            box-shadow: $box-shadow
+            color: $text-color-2
+            @media (max-width: $bp-lg)
+                width: auto
+                min-width: auto
+                margin-left: 22px
+            & hr
+                margin: 1px
+            & h4
+                font-size: $fs-4
+                font-weight: bolder
+                margin-bottom: 0
+                color: $text-color-2
+                padding: 2px 0
+
+                &.subtitle
+                    text-transform: uppercase
+                    font-size: $fs-5
+                    font-weight: 700
+
+        &-description
+            margin-bottom: 10px
+
+        &-label
+            font-size: $fs-4
+            font-weight: bold
+            padding: 5px 10px
+            margin-left: 22px
+            color: $text-color-2
+            background: $bg-3
+            border-radius: $border-radius
+            box-shadow: $box-shadow
+            @media (max-width: $bp-lg)
+                padding: 7px
+
+            &::before
+                content: ''
+                position: absolute
+                left: 10px
+                top: 50%
+                transform: translateY(-50%)
+                width: 10px
+                height: 10px
+                box-shadow: $box-shadow-lg
+
+        &-roles
+            display: flex
+            flex-direction: column
+            gap: 5px
+            margin-bottom: 10px
+
+        &-technologies
+            margin-top: 10px
+            display: flex
+            flex-wrap: wrap
+            list-style: none
+            gap: 10px
+            padding-left: 2rem
+
+            &-item
+                text-align: center
+                padding: 5px 10px
+                background-color: $bg-3
+                border-radius: $border-radius-sm
+                box-shadow: $box-shadow
