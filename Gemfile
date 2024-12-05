@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.10.0"
 gem "github-pages", group: :jekyll_plugins
-gem 'sass-rails'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

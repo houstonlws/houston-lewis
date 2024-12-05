@@ -2,9 +2,6 @@ list:
   - name: Email
     value: houstonhvrd@gmail.com
     class: fa fa-envelope
-  - name: Location
-    value: Raleigh, NC
-    class: fa fa-map-marker
 
 social:
   - name: LinkedIn
