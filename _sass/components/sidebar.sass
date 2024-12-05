@@ -1,13 +1,16 @@
+@use 'variables/colors' as colors
+@use 'variables/sizes' as sizes
+
 .social-icons
-  @media (max-width: $bp-xl)
+  @media (max-width: sizes.$bp-xl)
     margin-top: 25px
   & a
-    color: $text-color
+    color: colors.$text-color
     padding: 0 10px
     text-decoration: none
 
 .sidebar
-  border-radius: $border-radius
+  border-radius: sizes.$border-radius
   display: flex
   align-items: center
   flex-direction: column
@@ -16,29 +19,29 @@
   position: sticky
   top: 25px
 
-  @media (max-width: $bp-xl)
-    width: $container-lg
+  @media (max-width: sizes.$bp-xl)
+    width: sizes.$container-lg
     align-items: flex-start
     position: relative
     top: 0
     text-align: left
-  @media (max-width: $bp-lg)
-    width: $container-md
-  @media (max-width: $bp-md)
-    width: $container-sm
-  @media (max-width: $bp-sm)
-    width: $container-xs
+  @media (max-width: sizes.$bp-lg)
+    width: sizes.$container-md
+  @media (max-width: sizes.$bp-md)
+    width: sizes.$container-sm
+  @media (max-width: sizes.$bp-sm)
+    width: sizes.$container-xs
 
   &-logo
     width: 100px
     margin: 0 auto 25px auto
-    @media (max-width: $bp-xl)
+    @media (max-width: sizes.$bp-xl)
       width: 60px
       margin-right: 15px
       margin-bottom: 0
 
   &-title
-    font-size: $fs-2
+    font-size: sizes.$fs-2
     font-weight: bold
     margin: 0
 
@@ -48,7 +51,7 @@
 
   &-toggle
     display: none
-    @media (max-width: $bp-xl)
+    @media (max-width: sizes.$bp-xl)
       display: block
       position: absolute
       right: 20px
@@ -56,7 +59,7 @@
 
   &-content
     width: 100%
-    @media (max-width: $bp-xl)
+    @media (max-width: sizes.$bp-xl)
       height: 0
       overflow: hidden
       transition: height 0.5s ease
@@ -70,7 +73,7 @@
     display: flex
     justify-content: center
     flex-direction: column
-    @media (max-width: $bp-xl)
+    @media (max-width: sizes.$bp-xl)
       flex-direction: row
       align-items: center
 
@@ -78,9 +81,9 @@
     display: flex
     flex-direction: column
     gap: 5px
-    @media (max-width: $bp-xl)
+    @media (max-width: sizes.$bp-xl)
       flex-direction: row
-    @media (max-width: $bp-sm)
+    @media (max-width: sizes.$bp-sm)
       flex-direction: column
 
   &-item
@@ -96,13 +99,13 @@
       justify-content: center
       height: 36px
       width: 36px
-      background: $bg-3
-      border-radius: $border-radius
+      background: colors.$bg-3
+      border-radius: sizes.$border-radius
 
     & p
       margin: 0
 
-  @media (max-width: $bp-xl)
+  @media (max-width: sizes.$bp-xl)
 
     & hr
       display: none

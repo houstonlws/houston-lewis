@@ -44,7 +44,7 @@ jobs:
         run: npm install -g sass
 
       - name: Compile SASS
-        run: sass assets/css/styles.sass assets/css/styles.css
+        run: sass --load-path=_sass assets/css/styles.sass assets/css/styles.css
 
       - name: Setup Pages
         id: pages
