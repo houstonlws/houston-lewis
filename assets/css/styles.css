@@ -658,13 +658,9 @@ body hr {
   float: right;
   padding-left: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .skills-list {
     padding-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .skills-list {
     justify-content: center;
   }
 }
