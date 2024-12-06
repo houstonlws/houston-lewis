@@ -1,0 +1,22 @@
+<article class="education panel">
+  <h2>Education</h2>
+  <hr/>
+  <ul class="education-list">
+    {% for education in site.data.education %}
+      <li class="education-item">
+        <div class="education-item-icon">
+          <i class="fa fa-graduation-cap"></i>
+        </div>
+        <div class="education-item-text">
+          <p class="education-item-name">{{ education.name }}</p>
+          <p class="education-item-degree">
+            {{ education.degree }}
+          </p>
+          <p class="education-item-date">
+            {{ education.date }}
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</article>

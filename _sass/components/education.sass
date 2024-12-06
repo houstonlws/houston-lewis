@@ -1,0 +1,44 @@
+
+@use 'variables/colors' as colors
+@use 'variables/sizes' as sizes
+
+.education
+
+    &-list
+        display: flex
+        flex-direction: row
+        list-style: none
+        gap: 15px
+        @media (max-width: sizes.$bp-lg)
+            padding-left: 0
+        @media (max-width: sizes.$bp-md)
+            flex-direction: column
+
+    &-item
+        display: flex
+        align-items: center
+        padding: 25px
+        max-width: 405px
+        width: 100%
+        cursor: pointer
+        background: colors.$bg-2
+        border-radius: sizes.$border-radius
+        box-shadow: sizes.$box-shadow
+        @media (max-width: sizes.$bp-lg)
+            max-width: 100%
+
+        &-icon
+            width: 60px
+            height: 60px
+            aspect-ratio: 1 / 1
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 15px
+            font-size: 35px
+            background: colors.$bg-3
+            color: colors.$text-color-2
+            border-radius: 50%
+
+        & P
+            margin: 0
