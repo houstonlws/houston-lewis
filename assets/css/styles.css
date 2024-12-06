@@ -539,13 +539,14 @@ body hr {
 }
 .sidebar-logo {
   width: 100px;
-  margin: 0 auto 25px auto;
+  margin: 15px auto 30px auto;
 }
 @media (max-width: 1250px) {
   .sidebar-logo {
     width: 60px;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 .sidebar-title {
