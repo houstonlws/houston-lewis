@@ -1,1 +1,48 @@
-/*# sourceMappingURL=education.css.map */
+.education-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .education-list {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .education-list {
+    flex-direction: column;
+  }
+}
+.education-item {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  max-width: 405px;
+  width: 100%;
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+@media (max-width: 992px) {
+  .education-item {
+    max-width: 100%;
+  }
+}
+.education-item-icon {
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 35px;
+  background: #4d4d4d;
+  color: #b3b3b3;
+  border-radius: 50%;
+}
+.education-item P {
+  margin: 0;
+}/*# sourceMappingURL=education.css.map */

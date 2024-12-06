@@ -112,6 +112,7 @@ body hr {
   flex-direction: row;
   list-style: none;
   gap: 15px;
+  margin-bottom: 0;
 }
 @media (max-width: 992px) {
   .certifications-list {
@@ -161,6 +162,7 @@ body hr {
   flex-direction: row;
   list-style: none;
   gap: 15px;
+  margin-bottom: 0;
 }
 @media (max-width: 992px) {
   .education-list {
