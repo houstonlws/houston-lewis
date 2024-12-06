@@ -164,7 +164,6 @@ body hr {
   padding: 25px;
   max-width: 405px;
   width: 100%;
-  cursor: pointer;
   background: #333;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
