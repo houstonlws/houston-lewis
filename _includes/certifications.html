@@ -1,0 +1,22 @@
+<article class="certifications panel">
+  <h2>Certifications</h2>
+  <hr />
+  <ul class="certifications-list">
+    {% for certification in site.data.certifications %}
+    <li
+      class="certifications-item"
+      onclick="window.open('{{ certification.url }}', '_blank')"
+    >
+      <div class="certifications-item-icon">
+        <i class="{{ certification.class }}"></i>
+      </div>
+      <div class="certifications-item-text">
+        <p class="certifications-item-name">{{ certification.name }}</p>
+        <p class="certifications-item-description">
+          {{ certification.description }}
+        </p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
