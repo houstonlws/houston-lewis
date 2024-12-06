@@ -1,5 +1,5 @@
-@use 'variables/colors' as colors
-@use 'variables/sizes' as sizes
+@use '../variables/colors' as colors
+@use '../variables/sizes' as sizes
 
 .social-icons
   @media (max-width: sizes.$bp-xl)
@@ -45,18 +45,24 @@
     font-size: sizes.$fs-2
     font-weight: bold
     margin: 0
+    @media (max-width: sizes.$bp-sm)
+      font-size: 24px
 
   &-description
     max-width: 300px
     margin: 0
 
   &-toggle
+    margin-top: 25px
     display: none
     @media (max-width: sizes.$bp-xl)
       display: block
       position: absolute
-      right: 20px
-      top: 20px
+      padding: 15px 20px
+      right: 0
+      top: 0
+      @media (max-width: sizes.$bp-sm)
+        padding: 10px 15px
 
   &-content
     width: 100%

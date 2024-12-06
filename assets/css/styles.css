@@ -556,19 +556,31 @@ body hr {
   font-weight: bold;
   margin: 0;
 }
+@media (max-width: 576px) {
+  .sidebar-title {
+    font-size: 24px;
+  }
+}
 .sidebar-description {
   max-width: 300px;
   margin: 0;
 }
 .sidebar-toggle {
+  margin-top: 25px;
   display: none;
 }
 @media (max-width: 1250px) {
   .sidebar-toggle {
     display: block;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    padding: 15px 20px;
+    right: 0;
+    top: 0;
+  }
+}
+@media (max-width: 1250px) and (max-width: 576px) {
+  .sidebar-toggle {
+    padding: 10px 15px;
   }
 }
 .sidebar-content {
