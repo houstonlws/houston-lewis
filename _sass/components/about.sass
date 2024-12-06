@@ -1,1 +1,8 @@
+@use 'variables/sizes' as sizes
+@use 'variables/colors' as colors
 
+.about
+    &-content
+        padding-left: 2rem
+        @media (max-width: sizes.$bp-lg)
+            padding-left: 0
