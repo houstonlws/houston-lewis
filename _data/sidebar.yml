@@ -1,15 +1,14 @@
+other-title: Graphic Designer
 list:
   - name: Email
     value: houstonhvrd@gmail.com
+    url: mailto:houstonhvrd@gmail.com
     class: fa fa-envelope
-
-social:
   - name: LinkedIn
+    value: /houstonlewis
     url: https://www.linkedin.com/in/houstonlewis
     class: fa-brands fa-linkedin
   - name: GitHub
+    value: /houstonlws
     url: https://github.com/houstonlws
     class: fa-brands fa-github
-  - name: Email
-    url: mailto:houstonhvrd@gmail.com
-    class: fa fa-envelope

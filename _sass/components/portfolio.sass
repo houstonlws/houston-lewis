@@ -1,5 +1,5 @@
-@use 'variables/colors' as colors
-@use 'variables/sizes' as sizes
+@use '../variables/colors' as colors
+@use '../variables/sizes' as sizes
 
 .portfolio
 
@@ -11,7 +11,6 @@
         flex-wrap: wrap
 
         @media (max-width: sizes.$bp-md)
-
             gap: 25px
 
     &-thumbnail
@@ -39,6 +38,7 @@
         max-width: 270px
         display: flex
         flex-direction: column
+        box-shadow: sizes.$box-shadow
 
         @media (max-width: sizes.$bp-xl)
 
