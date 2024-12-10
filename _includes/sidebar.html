@@ -31,16 +31,14 @@
   <div class="sidebar-content" id="sidebar-content">
     <div class="sidebar-list">
       {% for item in site.data.sidebar.list %}
-        <div class="sidebar-item" onclick="window.open('{{ item.url }}', '-blank')">
-          <div class="sidebar-item-icon">
-            <i class="{{ item.class }}"></i>
-          </div>
+        <div class="sidebar-item" onclick="window.open('{{ item.url }}', '_blank')">
           {% if item.url %}
-            <a href="{{ item.url }}">
-              <div class="sidebar-item-text">
-                {{ item.value }}
-              </div>
-            </a>
+            <div class="sidebar-item-icon">
+              <i class="{{ item.class }}"></i>
+            </div>
+            <div class="sidebar-item-text">
+              {{ item.value }}
+            </div>
           {% else %}
             <div class="sidebar-item-text">
               <p class="sidebar-item-value">{{ item.value }}</p>

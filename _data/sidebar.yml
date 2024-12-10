@@ -4,10 +4,10 @@ list:
     url: mailto:houstonhvrd@gmail.com
     class: fa fa-envelope
   - name: LinkedIn
-    value: /houstonlewis
+    value: houstonlewis
     url: https://www.linkedin.com/in/houstonlewis
     class: fa-brands fa-linkedin
   - name: GitHub
-    value: /houstonlws
+    value: houstonlws
     url: https://github.com/houstonlws
     class: fa-brands fa-github

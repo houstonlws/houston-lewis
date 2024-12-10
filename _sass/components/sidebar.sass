@@ -1,16 +1,16 @@
-@use '../variables/colors' as colors
-@use '../variables/sizes' as sizes
+@use '../variables/colors' as *
+@use '../variables/sizes' as *
 
 .social-icons
-  @media (max-width: sizes.$bp-xl)
+  @media (max-width: $bp-xl)
     margin-top: 25px
   & a
-    color: colors.$text-color
+    color: $text-color
     padding: 0 10px
     text-decoration: none
 
 .sidebar
-  border-radius: sizes.$border-radius
+  border-radius: $border-radius
   display: flex
   align-items: center
   flex-direction: column
@@ -19,68 +19,68 @@
   position: sticky
   top: 25px
 
-  @media (max-width: sizes.$bp-xl)
-    width: sizes.$container-lg
+  @media (max-width: $bp-xl)
+    width: $container-lg
     align-items: flex-start
     position: relative
     top: 0
     text-align: left
-  @media (max-width: sizes.$bp-lg)
-    width: sizes.$container-md
-  @media (max-width: sizes.$bp-md)
-    width: sizes.$container-sm
-  @media (max-width: sizes.$bp-sm)
-    width: sizes.$container-xs
+  @media (max-width: $bp-lg)
+    width: $container-md
+  @media (max-width: $bp-md)
+    width: $container-sm
+  @media (max-width: $bp-sm)
+    width: $container-xs
 
   &-logo
     max-width: 100px
     width: 100%
     margin: 15px auto 30px auto
-    @media (max-width: sizes.$bp-xl)
+    @media (max-width: $bp-xl)
       max-width: 60px
       margin-right: 20px
       margin-bottom: 0
       margin-top: 0
 
   &-title
-    font-size: sizes.$fs-2
+    font-size: $fs-2
     font-weight: bold
     margin: 0
-    @media (max-width: sizes.$bp-sm)
+    @media (max-width: $bp-sm)
       font-size: 24px
 
   &-description
     display: flex
     flex-direction: column
-    @media (max-width: sizes.$bp-xl)
+    @media (max-width: $bp-xl)
       flex-direction: row
       gap: 10px
-    @media (max-width: sizes.$bp-sm)
+    @media (max-width: $bp-sm)
       flex-direction: column
       gap: 0
 
     &-item
       max-width: 300px
       margin: 0
-      @media (max-width: sizes.$bp-sm)
-        font-size: sizes.$fs-5
+      @media (max-width: $bp-sm)
+        font-size: $fs-5
 
   &-toggle
     margin-top: 25px
     display: none
     cursor: pointer
-    @media (max-width: sizes.$bp-xl)
+    @media (max-width: $bp-xl)
       display: block
       position: absolute
       padding: 15px 20px
       right: 0
       top: 0
-      @media (max-width: sizes.$bp-sm)
+      @media (max-width: $bp-sm)
         padding: 10px 15px
 
   &-content
     width: 100%
-    @media (max-width: sizes.$bp-xl)
+    @media (max-width: $bp-xl)
       height: 0
       overflow: hidden
       transition: height .25s ease-in-out
@@ -95,7 +95,7 @@
     justify-content: center
     flex-direction: column
     transition: all ease 1s
-    @media (max-width: sizes.$bp-xl)
+    @media (max-width: $bp-xl)
       flex-direction: row
       align-items: center
       &.open
@@ -106,7 +106,7 @@
     flex-direction: column
     flex-wrap: wrap
     gap: 10px
-    @media (min-width: sizes.$bp-md) and (max-width: sizes.$bp-xl)
+    @media (min-width: $bp-md) and (max-width: $bp-xl)
       flex-direction: row
 
   &-item
@@ -115,29 +115,28 @@
     cursor: pointer
     gap: 15px
     text-align: left
-    background-color: colors.$bg-2
-    border-radius: sizes.$border-radius-sm
-    padding: sizes.$padding
-    box-shadow: sizes.$box-shadow
-    @media (max-width: sizes.$bp-xl)
+    padding: $padding
+    background: $bg-2
+    box-shadow: $box-shadow
+    border-radius: $border-radius
+
+    @media (max-width: $bp-xl)
       flex: 0 0 calc(50% - 5px)
 
     & a
-      color: colors.$text-color
+      color: $text-color
+      text-decoration: none
 
     &-icon
       display: flex
       align-items: center
       justify-content: center
-      height: 36px
-      width: 36px
-      background: colors.$bg-3
-      border-radius: sizes.$border-radius
+      font-size: 26px
 
     & p
       margin: 0
 
-  @media (max-width: sizes.$bp-xl)
+  @media (max-width: $bp-xl)
 
     & hr
       display: none
