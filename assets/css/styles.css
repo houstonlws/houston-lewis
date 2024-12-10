@@ -637,7 +637,7 @@ body hr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
 }
 @media (min-width: 768px) and (max-width: 1250px) {
   .sidebar-list {
