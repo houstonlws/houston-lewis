@@ -1,18 +1,20 @@
-@use 'variables/sizes' as sizes
-@use 'variables/colors' as colors
+@use 'variables/sizes' as *
+@use 'variables/colors' as *
 
 h1
-  font-size: sizes.$fs-2
+  font-size: $fs-1
+  @media  ( max-width: $bp-md )
+    font-size: $fs-2
 h2
-  font-size: sizes.$fs-1
+  font-size: $fs-2
 h3
-  font-size: sizes.$fs-2
+  font-size: $fs-2
 h4
-  font-size: sizes.$fs-4
+  font-size: $fs-4
 h5
-  font-size: sizes.$fs-5
+  font-size: $fs-5
 h6
-  font-size: sizes.$fs-6
+  font-size: $fs-6
 h1,
 h2,
 h3,
@@ -20,13 +22,13 @@ h4,
 h5,
 h6
   font-family: 'Montserrat', sans-serif
-  color: colors.$text-color
+  color: $text-color
 
 body
-  background-color: colors.$bg-0,
+  background-color: $bg-0,
   font-family: 'Lato', sans-serif
-  color: colors.$text-color
-  fill: colors.$text-color
+  color: $text-color
+  fill: $text-color
   height: 100vh
 
   hr
