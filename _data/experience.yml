@@ -35,6 +35,8 @@
       class: devicon-vuejs-plain
     - name: JavaScript
       class: devicon-javascript-plain
+    - name: TypeScript
+      class: devicon-typescript-plain
     - name: HTML
       class: devicon-html5-plain
     - name: CSS
