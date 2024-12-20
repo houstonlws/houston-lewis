@@ -35,8 +35,6 @@
       class: devicon-vuejs-plain
     - name: JavaScript
       class: devicon-javascript-plain
-    - name: TypeScript
-      class: devicon-typescript-plain
     - name: HTML
       class: devicon-html5-plain
     - name: CSS
@@ -58,7 +56,7 @@
     - name: Spring Boot
       class: devicon-spring-plain
     - name: JDBC
-      class: devicon-jdbc-plain
+      class: fa-solid fa-database
     - name: Junit
       class: devicon-junit-plain
     - name: Angular
