@@ -30,13 +30,28 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install Ruby toolcache on self-hosted runner
+        if: contains(runner.labels, 'self-hosted')
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git curl build-essential libssl-dev libreadline-dev zlib1g-dev libyaml-dev libffi-dev libgdbm-dev
+          RBUILDBIN=/tmp/ruby-build
+          curl -fsSL https://github.com/rbenv/ruby-build/archive/refs/tags/v20260107.tar.gz | tar xz -C /tmp
+          cd /tmp/ruby-build-* && sudo ./install.sh
+          sudo mkdir -p /opt/hostedtoolcache/Ruby/3.2.2/x64
+          sudo ruby-build 3.2.2 /opt/hostedtoolcache/Ruby/3.2.2/x64
+          sudo touch /opt/hostedtoolcache/Ruby/3.2.2/x64.complete
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
         with:
-          ruby-version: '3.2' # Not needed with a .ruby-version file
+          ruby-version: '3.2.2' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
 
@@ -64,6 +79,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     needs: build
     steps:
       - name: Deploy to GitHub Pages
