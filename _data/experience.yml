@@ -1,48 +1,58 @@
-- date: 06/2021 – Present
-  title: Full Stack Developer
+- date: 10/2025 – Present
+  title: Senior Tech Analyst
   company: Infosys
-  description: At Infosys I have the opportunity to work with a variety of clients and projects across many different domains. Primarily I work with microservice-oriented projects as a full stack developer. I am constantly learning new technologies and frameworks to keep up with the ever-changing tech landscape. I am also working on personal projects to apply new knowledge and explore new ideas.
+  description: As a Tech Analyst at Infosys, I am responsible for analyzing and designing solutions for complex business problems. I work closely with business stakeholders to understand their needs and requirements, and I use my technical expertise to develop innovative solutions that meet those needs. I also have the opportunity to mentor and guide junior developers, helping them to grow and develop their skills. I am constantly learning and staying up-to-date with the latest technologies and trends in the industry, which allows me to provide valuable insights and recommendations to my team and clients.
   technologies:
-    - name: Java
-      class: devicon-java-plain
-    - name: SQL
-      class: devicon-mysql-plain
-    - name: Spring Boot
-      class: devicon-spring-plain
-    - name: TypeScript
-      class: devicon-typescript-plain
     - name: AWS
       class: devicon-amazonwebservices-plain
-    - name: Vue3
-      class: devicon-vuejs-plain
-    - name: Firebase
-      class: devicon-firebase-plain
-    - name: HTML
-      class: devicon-html5-plain
-    - name: CSS
-      class: devicon-css3-plain
+    - name: Terraform
+      class: devicon-terraform-plain
+    - name: Java
+      class: devicon-java-plain
+    - name: Spring Batch
+      class: devicon-spring-plain
+    - name: Spring Boot
+      class: devicon-spring-plain
+    - name: Python
+      class: devicon-python-plain
+    - name: Kafka
+      class: devicon-apachekafka-plain
+    - name: React
+      class: devicon-react-plain
+    - name: CI/CD
+      class: fa-solid fa-cogs
+    - name: Jenkins
+      class: devicon-jenkins-plain
+    - name: Docker
+      class: devicon-docker-plain
+    - name: Splunk
+      class: devicon-splunk-original
 
-- date: 06/2021 – 06/2024
-  title: Full Stack Developer
-  company: Infosys - Florida Power & Light
-  description: At my time at FPL, I had the opportunity to work on several projects that helped me grow as a developer. I worked in a microservice-oriented architecture to create and implement several new features and programs for their web application. I also had the opportunity to work with an experienced and supportive team that helped me learn and grow along the way.
+- date: 06/2021 – 10/2025
+  title: Senior Full Stack Developer
+  company: Infosys
+  description: As a Full Stack Developer at Infosys, my primary focus was on developing and maintaining microservice-oriented projects. I worked with a variety of technologies and frameworks, including Java, Spring Boot, React, and AWS. I was responsible for designing and implementing new features, as well as maintaining and improving existing ones. I also had the opportunity to work on projects that involved cloud computing and DevOps practices, which allowed me to further develop my skills in those areas.
   technologies:
     - name: Java
       class: devicon-java-plain
     - name: Spring Boot
       class: devicon-spring-plain
-    - name: Vue2
+    - name: AWS
+      class: devicon-amazonwebservices-plain
+    - name: React
+      class: devicon-react-plain
+    - name: Vue
       class: devicon-vuejs-plain
-    - name: JavaScript
-      class: devicon-javascript-plain
+    - name: Angular
+      class: devicon-angularjs-plain
+    - name: PostgreSQL
+      class: devicon-postgresql-plain
+    - name: TypeScript
+      class: devicon-typescript-plain
     - name: HTML
       class: devicon-html5-plain
     - name: CSS
       class: devicon-css3-plain
-    - name: AWS
-      class: devicon-amazonwebservices-plain-wordmark
-    - name: Microservices
-      class: fa fa-server
 
 - date: 02/2021 – 06/2021
   title: Full Stack Developer
