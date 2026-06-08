@@ -1,0 +1,61 @@
+@use '../variables/colors' as colors
+@use '../variables/sizes' as sizes
+
+// Reusable card styling.
+@mixin card(
+  $bg: colors.$bg-2,
+  $border: colors.$border-1,
+  $radius: sizes.$border-radius,
+  $shadow: sizes.$box-shadow,
+  $padding: 25px,
+  $overflow: null
+)
+  background-color: $bg
+  @if $border != null
+    border: $border
+  border-radius: $radius
+  box-shadow: $shadow
+  padding: $padding
+  @if $overflow != null
+    overflow: $overflow
+
+// Reusable inline chip / badge styling.
+@mixin chip(
+  $bg: colors.$bg-3,
+  $color: colors.$text-color-2,
+  $radius: sizes.$border-radius,
+  $padding: 5px 10px,
+  $shadow: sizes.$box-shadow,
+  $display: inline-flex,
+  $align: center
+)
+  display: $display
+  align-items: $align
+  justify-content: center
+  background-color: $bg
+  color: $color
+  padding: $padding
+  border-radius: $radius
+  box-shadow: $shadow
+  text-decoration: none
+
+// Reusable icon badge styling.
+@mixin icon-badge(
+  $size: 60px,
+  $bg: colors.$bg-3,
+  $color: colors.$text-color-2,
+  $radius: 50%,
+  $shadow: sizes.$box-shadow,
+  $font-size: sizes.$fs-4
+)
+  width: $size
+  height: $size
+  aspect-ratio: 1 / 1
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $bg
+  color: $color
+  border-radius: $radius
+  box-shadow: $shadow
+  font-size: $font-size

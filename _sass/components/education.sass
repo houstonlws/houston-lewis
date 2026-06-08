@@ -1,6 +1,7 @@
 
 @use '../variables/colors' as colors
 @use '../variables/sizes' as sizes
+@use '../utilities/components' as ui
 
 .education
 
@@ -19,27 +20,15 @@
     &-item
         display: flex
         align-items: center
-        padding: 25px
         max-width: 405px
         width: 100%
-        background: colors.$bg-2
-        border-radius: sizes.$border-radius
-        box-shadow: sizes.$box-shadow-lg
+        @include ui.card($bg: colors.$bg-2, $border: null, $shadow: sizes.$box-shadow-lg, $padding: 25px)
         @media (max-width: sizes.$bp-lg)
             max-width: 100%
 
         &-icon
-            width: 60px
-            height: 60px
-            aspect-ratio: 1 / 1
-            display: flex
-            align-items: center
-            justify-content: center
             margin-right: 15px
-            font-size: 35px
-            background: colors.$bg-3
-            color: colors.$text-color-2
-            border-radius: 50%
+            @include ui.icon-badge($bg: colors.$bg-3, $color: colors.$text-color-2, $font-size: 35px)
 
         & P
             margin: 0

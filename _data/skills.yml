@@ -1,34 +1,32 @@
 - name: AWS
   class: devicon-amazonwebservices-plain-wordmark
+- name: CI/CD
+  class: fa-solid fa-cogs
+- name: Terraform
+  class: devicon-terraform-plain
+- name: Docker
+  class: devicon-docker-plain
+- name: Kafka
+  class: devicon-apachekafka-plain
+- name: Splunk
+  class: fa-solid fa-chart-line
 - name: Java
   class: devicon-java-plain
 - name: Spring Boot
   class: devicon-spring-plain
-- name: TypeScript
-  class: devicon-typescript-plain
 - name: Python
   class: devicon-python-plain
-- name: Kafka
-  class: devicon-apachekafka-plain
 - name: React
   class: devicon-react-original
 - name: Vue
   class: devicon-vuejs-plain
 - name: Angular
   class: devicon-angularjs-plain
+- name: TypeScript
+  class: devicon-typescript-plain
 - name: HTML
   class: devicon-html5-plain
 - name: CSS
   class: devicon-css3-plain
-- name: Jenkins
-  class: devicon-jenkins-plain
-- name: Docker
-  class: devicon-docker-plain
-- name: Terraform
-  class: devicon-terraform-plain
-- name: Splunk
-  class: fa-solid fa-chart-line
-- name: CI/CD
-  class: fa-solid fa-cogs
 - name: Google Cloud
   class: devicon-google-plain

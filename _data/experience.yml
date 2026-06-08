@@ -1,32 +1,32 @@
 - date: 10/2025 – Present
   title: Senior Tech Analyst
   company: Infosys
-  description: As a Tech Analyst at Infosys, I am responsible for analyzing and designing solutions for complex business problems. I work closely with business stakeholders to understand their needs and requirements, and I use my technical expertise to develop innovative solutions that meet those needs. I also have the opportunity to mentor and guide junior developers, helping them to grow and develop their skills. I am constantly learning and staying up-to-date with the latest technologies and trends in the industry, which allows me to provide valuable insights and recommendations to my team and clients.
+  description: As a Senior Tech Analyst at Infosys, I manage AWS-based cloud operations for logistics and billing systems at a large corporation. I oversee messaging and queue processing for freight invoice ingestion, build, deploy, update, configure, monitor, and maintain end-to-end pipelines, and support a React business-facing UI that gives stakeholders operational visibility into shipment and billing workflows. I also own CI/CD pipeline management and ensure the platform is reliable, scalable, and aligned with business priorities.
   technologies:
     - name: AWS
       class: devicon-amazonwebservices-plain
+    - name: CI/CD
+      class: fa-solid fa-cogs
     - name: Terraform
       class: devicon-terraform-plain
-    - name: Java
-      class: devicon-java-plain
-    - name: Spring Batch
-      class: devicon-spring-plain
-    - name: Spring Boot
-      class: devicon-spring-plain
-    - name: Python
-      class: devicon-python-plain
+    - name: Docker
+      class: devicon-docker-plain
+    - name: Jenkins
+      class: devicon-jenkins-plain
     - name: Kafka
       class: devicon-apachekafka-plain
     - name: React
       class: devicon-react-plain
-    - name: CI/CD
-      class: fa-solid fa-cogs
-    - name: Jenkins
-      class: devicon-jenkins-plain
-    - name: Docker
-      class: devicon-docker-plain
     - name: Splunk
       class: fa-solid fa-chart-line
+    - name: Java
+      class: devicon-java-plain
+    - name: Spring Boot
+      class: devicon-spring-plain
+    - name: Spring Batch
+      class: devicon-spring-plain
+    - name: Python
+      class: devicon-python-plain
 
 - date: 06/2021 – 10/2025
   title: Senior Full Stack Developer
@@ -36,6 +36,8 @@
     - name: Java
       class: devicon-java-plain
     - name: Spring Boot
+      class: devicon-spring-plain
+    - name: Spring Batch
       class: devicon-spring-plain
     - name: AWS
       class: devicon-amazonwebservices-plain
@@ -53,6 +55,8 @@
       class: devicon-html5-plain
     - name: CSS
       class: devicon-css3-plain
+    - name: GitHub
+      class: devicon-github-plain
 
 - date: 02/2021 – 06/2021
   title: Full Stack Developer

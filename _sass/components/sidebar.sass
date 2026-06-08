@@ -1,5 +1,6 @@
 @use '../variables/colors' as *
 @use '../variables/sizes' as *
+@use '../utilities/components' as ui
 
 .social-icons
   @media (max-width: $bp-xl)
@@ -135,10 +136,7 @@
     cursor: pointer
     gap: 15px
     text-align: left
-    padding: $padding
-    background: $bg-2
-    box-shadow: $box-shadow
-    border-radius: $border-radius
+    @include ui.card($bg: $bg-2, $border: null, $shadow: $box-shadow, $padding: $padding)
 
     @media (max-width: $bp-xl)
       flex: 0 0 calc(50% - 10px)

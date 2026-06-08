@@ -1,5 +1,6 @@
 @use 'variables/colors' as colors
 @use 'variables/sizes' as sizes
+@use '../utilities/components' as ui
 
 .skills
 
@@ -15,12 +16,7 @@
             justify-content: center
 
     &-item
-        display: flex
-        align-items: center
-        background: colors.$bg-3
-        border-radius: sizes.$border-radius
-        padding: 5px 15px
-        box-shadow: sizes.$box-shadow-lg
+        @include ui.chip($bg: colors.$bg-3, $color: colors.$text-color, $radius: sizes.$border-radius, $padding: 5px 15px, $shadow: sizes.$box-shadow-lg)
         & p
             margin-bottom: 0
             margin-left: 10px

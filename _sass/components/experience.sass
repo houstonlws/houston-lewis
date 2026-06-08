@@ -1,5 +1,6 @@
 @use '../variables/colors' as colors
 @use '../variables/sizes' as sizes
+@use '../utilities/components' as ui
 
 .experience
     max-height: 500px
@@ -47,10 +48,7 @@
         position: relative
         margin-bottom: 1rem
         display: flex
-        background-color: colors.$bg-2
-        border-radius: sizes.$border-radius
-        padding: 25px
-        box-shadow: sizes.$box-shadow-lg
+        @include ui.card($bg: colors.$bg-2, $border: null, $shadow: sizes.$box-shadow-lg, $padding: 25px)
         @media (max-width: sizes.$bp-lg)
             flex-direction: column
             gap: 10px
@@ -122,14 +120,10 @@
                 padding-left: 10px
 
         &-label
+            @include ui.chip($bg: colors.$bg-3, $color: colors.$text-color-2, $radius: sizes.$border-radius, $padding: 5px 10px, $shadow: sizes.$box-shadow)
             font-size: sizes.$fs-4
             font-weight: bold
-            padding: 5px 10px
             margin-left: 22px
-            color: colors.$text-color-2
-            background: colors.$bg-3
-            border-radius: sizes.$border-radius
-            box-shadow: sizes.$box-shadow
             @media (max-width: sizes.$bp-lg)
                 padding: 10px
                 margin-left: 0
@@ -161,8 +155,5 @@
                 padding-left: 0
 
             &-item
+                @include ui.chip($bg: colors.$bg-3, $radius: sizes.$border-radius-sm, $padding: 5px 10px, $shadow: sizes.$box-shadow)
                 text-align: center
-                padding: 5px 10px
-                background-color: colors.$bg-3
-                border-radius: sizes.$border-radius-sm
-                box-shadow: sizes.$box-shadow

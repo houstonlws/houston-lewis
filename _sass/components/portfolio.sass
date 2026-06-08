@@ -1,5 +1,6 @@
 @use '../variables/colors' as colors
 @use '../variables/sizes' as sizes
+@use '../utilities/components' as ui
 
 .portfolio
 
@@ -31,14 +32,11 @@
         padding: 15px
 
     &-item
-        background-color: colors.$bg-2
-        border: colors.$border-1
-        border-radius: sizes.$border-radius
+        @include ui.card($bg: colors.$bg-2, $border: colors.$border-1, $shadow: sizes.$box-shadow, $padding: 0)
         overflow: hidden
         max-width: 270px
         display: flex
         flex-direction: column
-        box-shadow: sizes.$box-shadow
 
         @media (max-width: sizes.$bp-xl)
 
