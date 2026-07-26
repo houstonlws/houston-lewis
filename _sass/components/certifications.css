@@ -1,6 +1,52 @@
 .certifications-list {
+  display: flex;
+  flex-direction: row;
   list-style: none;
+  gap: 15px;
+  margin-bottom: 0;
+  padding: 0;
+}
+@media (max-width: 992px) {
+  .certifications-list {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .certifications-list {
+    flex-direction: column;
+  }
 }
 .certifications-item {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  max-width: 405px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 25px;
+}
+@media (max-width: 992px) {
+  .certifications-item {
+    max-width: 100%;
+  }
+}
+.certifications-item-icon {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4d4d4d;
+  color: #b3b3b3;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  font-size: 35px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.certifications-item P {
+  margin: 0;
 }/*# sourceMappingURL=certifications.css.map */

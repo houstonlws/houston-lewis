@@ -1,0 +1,31 @@
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: left;
+  float: right;
+}
+@media (max-width: 992px) {
+  .skills-list {
+    padding-left: 0;
+    justify-content: center;
+  }
+}
+.skills-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.skills-item p {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.skills-item-icon {
+  font-size: 26px;
+}/*# sourceMappingURL=skills.css.map */
