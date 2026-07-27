@@ -1,7 +1,13 @@
 - date: 10/2025 – Present
   title: Senior Tech Analyst
   company: Infosys
-  description: As a Senior Tech Analyst at Infosys, I manage AWS-based cloud operations for logistics and billing systems at a large corporation. I oversee messaging and queue processing for freight invoice ingestion, build, deploy, update, configure, monitor, and maintain end-to-end pipelines, and support a React business-facing UI that gives stakeholders operational visibility into shipment and billing workflows. I also own CI/CD pipeline management and ensure the platform is reliable, scalable, and aligned with business priorities.
+  description: I analyze and improve AWS-based logistics and billing systems for a large enterprise client — focusing on how data moves, where things break, and what needs to change to keep the platform reliable and aligned with business goals.
+  roles:
+    - Analyze freight invoice ingestion and pub/sub messaging workflows to identify bottlenecks and reliability gaps
+    - Design and maintain AWS pub/sub and queue processing pipelines end to end, applying proven integration and messaging patterns
+    - Manage CI/CD pipelines and infrastructure changes with Terraform, following cloud and deployment best practices
+    - Support operational tooling that gives stakeholders visibility into shipment and billing data
+    - Monitor platform health in Splunk and align technical improvements with business priorities
   technologies:
     - name: AWS
       class: devicon-amazonwebservices-plain
@@ -15,8 +21,6 @@
       class: devicon-jenkins-plain
     - name: Kafka
       class: devicon-apachekafka-plain
-    - name: React
-      class: devicon-react-plain
     - name: Splunk
       class: fa-solid fa-chart-line
     - name: Java
@@ -27,41 +31,47 @@
       class: devicon-spring-plain
     - name: Python
       class: devicon-python-plain
+    - name: React
+      class: devicon-react-plain
 
 - date: 06/2021 – 10/2025
   title: Senior Full Stack Developer
   company: Infosys
-  description: As a Full Stack Developer at Infosys, my primary focus was on developing and maintaining microservice-oriented projects. I worked with a variety of technologies and frameworks, including Java, Spring Boot, React, and AWS. I was responsible for designing and implementing new features, as well as maintaining and improving existing ones. I also had the opportunity to work on projects that involved cloud computing and DevOps practices, which allowed me to further develop my skills in those areas.
+  description: Over four years at Infosys, I grew from building services to shaping how systems are designed and delivered — working on microservice architectures, AWS cloud deployments, and the integration patterns that keep platforms maintainable at scale. Moved into Senior Tech Analyst in October 2025 to focus on platform analysis and cloud architecture.
+  roles:
+    - Contributed to microservice system design, REST API contracts, and service integration patterns across distributed systems
+    - Deployed and maintained applications on AWS with increasing ownership of CI/CD and infrastructure workflows
+    - Improved existing services for performance, reliability, and long-term maintainability in production environments
+    - Partnered on operational and stakeholder-facing tooling to support business workflows and system visibility
   technologies:
+    - name: AWS
+      class: devicon-amazonwebservices-plain
     - name: Java
       class: devicon-java-plain
     - name: Spring Boot
       class: devicon-spring-plain
     - name: Spring Batch
       class: devicon-spring-plain
-    - name: AWS
-      class: devicon-amazonwebservices-plain
+    - name: PostgreSQL
+      class: devicon-postgresql-plain
     - name: React
       class: devicon-react-plain
+    - name: TypeScript
+      class: devicon-typescript-plain
+    - name: GitHub
+      class: devicon-github-plain
     - name: Vue
       class: devicon-vuejs-plain
     - name: Angular
       class: devicon-angularjs-plain
-    - name: PostgreSQL
-      class: devicon-postgresql-plain
-    - name: TypeScript
-      class: devicon-typescript-plain
-    - name: HTML
-      class: devicon-html5-plain
-    - name: CSS
-      class: devicon-css3-plain
-    - name: GitHub
-      class: devicon-github-plain
 
 - date: 02/2021 – 06/2021
   title: Full Stack Developer
   company: Revature
-  description: At Revature I attended a 16-week bootcamp where I honed my skills and became familiar with the tools and concepts behind full stack development. I worked on several projects that included a variety of technologies and frameworks. It was here that the concept of continuous learning and development was first introduced to me, and I continue to apply that concept to my life today.
+  description: Completed an intensive 16-week training program focused on enterprise Java development — the engineering foundation I built on before moving into cloud systems and platform analysis.
+  roles:
+    - Built REST microservices with Java, Spring Boot, and Angular following test-driven development practices
+    - Shipped capstone projects with SQL-backed APIs, JUnit test coverage, and AWS deployment exposure
   technologies:
     - name: Java
       class: devicon-java-plain
@@ -89,9 +99,9 @@
 - date: 06/2019 – 02/2021
   title: Graphic Designer
   company: North Carolina Central University
-  description: At NCCU I had the opportunity to run and manage the Central Graphics Print Shop on campus. I was responsible for all print services and customer interactions. I was able to work on projects that varied greatly in scale and complexity. I was also able to produce materials in a variety of mediums both print and digital.
+  description: Ran the campus print shop — translating client needs into deliverables, managing projects end to end, and meeting tight deadlines across print and digital work.
 
 - date: 05/2018 – 06/2019
   title: Print Specialist
   company: Office Depot
-  description: At Office Depot I was responsible for all print services and customer interactions in the Copy and Print Center. I completed a variety of projects that included business cards, banners, posters, and other print materials. I was also responsible for maintaining the print equipment and inventory.
+  description: Handled customer-facing print projects from business cards to large-format banners, while keeping equipment running and inventory stocked.

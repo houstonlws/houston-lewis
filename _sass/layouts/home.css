@@ -1,56 +1,37 @@
 .panel {
-  background-color: #1b1b1b;
-  border: 1px solid #4d4d4d;
-  border-radius: 10px;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  padding: 15px 20px;
-}
-@media (max-width: 768px) {
-  .panel {
-    padding: 15px 15px;
-  }
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
 }
 
 .app {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-width: 1440px;
-  margin: 35px auto;
-  padding-bottom: 35px;
-  gap: 25px;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  gap: 48px;
 }
 .app-content {
-  width: 75%;
-  position: relative;
+  flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 80px;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .app {
     flex-direction: column;
-    align-items: center;
-  }
-  .app-content {
-    width: 950px;
-  }
-}
-@media (max-width: 992px) {
-  .app-content {
-    width: 700px;
-  }
-}
-@media (max-width: 768px) {
-  .app-content {
-    width: 500px;
+    align-items: stretch;
+    padding: 24px 20px 60px;
+    gap: 40px;
   }
 }
 @media (max-width: 576px) {
   .app {
-    margin: 15px;
-  }
-  .app-content {
-    width: 100%;
+    padding: 16px 16px 48px;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -1,12 +1,12 @@
+@use 'sass:color'
 @use '../variables/colors' as colors
 @use '../variables/sizes' as sizes
 
-// Reusable card styling.
 @mixin card(
-  $bg: colors.$bg-2,
+  $bg: colors.$bg-elevated,
   $border: colors.$border-1,
   $radius: sizes.$border-radius,
-  $shadow: sizes.$box-shadow,
+  $shadow: sizes.$box-shadow-sm,
   $padding: 25px,
   $overflow: null
 )
@@ -19,13 +19,21 @@
   @if $overflow != null
     overflow: $overflow
 
-// Reusable inline chip / badge styling.
+@mixin surface-card(
+  $bg: colors.$bg-surface,
+  $padding: 24px
+)
+  background-color: $bg
+  border: colors.$border-1
+  border-radius: sizes.$border-radius-lg
+  padding: $padding
+
 @mixin chip(
-  $bg: colors.$bg-3,
-  $color: colors.$text-color-2,
-  $radius: sizes.$border-radius,
-  $padding: 5px 10px,
-  $shadow: sizes.$box-shadow,
+  $bg: colors.$bg-muted,
+  $color: colors.$text-secondary,
+  $radius: sizes.$border-radius-sm,
+  $padding: 6px 14px,
+  $shadow: none,
   $display: inline-flex,
   $align: center
 )
@@ -39,14 +47,64 @@
   box-shadow: $shadow
   text-decoration: none
 
-// Reusable icon badge styling.
+@mixin pill-badge(
+  $bg: rgba(colors.$accent, 0.12),
+  $color: colors.$accent
+)
+  display: inline-flex
+  align-items: center
+  gap: 8px
+  padding: 6px 14px
+  border-radius: 999px
+  background: $bg
+  color: $color
+  font-size: sizes.$fs-6
+  font-weight: 500
+
+@mixin btn-base
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 12px 24px
+  border-radius: sizes.$border-radius-sm
+  font-size: sizes.$fs-5
+  font-weight: 600
+  text-decoration: none
+  cursor: pointer
+  border: none
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease
+
+@mixin btn-primary
+  @include btn-base
+  background: colors.$accent
+  color: colors.$bg-page
+  &:hover
+    background: color.adjust(colors.$accent, $lightness: 5%)
+    transform: translateY(-1px)
+
+@mixin btn-outline
+  @include btn-base
+  background: transparent
+  color: colors.$text-primary
+  border: 1px solid colors.$border-subtle
+  &:hover
+    border-color: colors.$accent
+    color: colors.$accent
+
+@mixin section-heading
+  font-family: 'Space Grotesk', sans-serif
+  font-size: sizes.$fs-1
+  font-weight: 600
+  color: colors.$text-primary
+  margin: 0 0 sizes.$margin-xxl
+
 @mixin icon-badge(
-  $size: 60px,
-  $bg: colors.$bg-3,
-  $color: colors.$text-color-2,
+  $size: 48px,
+  $bg: colors.$bg-muted,
+  $color: colors.$accent,
   $radius: 50%,
-  $shadow: sizes.$box-shadow,
-  $font-size: sizes.$fs-4
+  $shadow: none,
+  $font-size: sizes.$fs-3
 )
   width: $size
   height: $size
@@ -59,3 +117,4 @@
   border-radius: $radius
   box-shadow: $shadow
   font-size: $font-size
+  flex-shrink: 0

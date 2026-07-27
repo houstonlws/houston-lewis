@@ -1,0 +1,44 @@
+.contact-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 25px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media (max-width: 810px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.contact-card {
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.contact-card:hover {
+  border-color: rgba(40, 233, 140, 0.4);
+  transform: translateY(-2px);
+  color: inherit;
+}
+.contact-card-label {
+  font-size: 13px;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.contact-card-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}/*# sourceMappingURL=contact.css.map */

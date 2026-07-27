@@ -1,22 +1,17 @@
-<article class="education panel">
-  <h2>Education</h2>
-  <hr/>
+<section class="education section reveal" id="education">
+  <h2 class="education-title">Education</h2>
   <ul class="education-list">
     {% for education in site.data.education %}
-      <li class="education-item">
-        <div class="education-item-icon">
-          <i class="fa fa-graduation-cap"></i>
-        </div>
-        <div class="education-item-text">
-          <p class="education-item-name">{{ education.name }}</p>
-          <p class="education-item-degree">
-            {{ education.degree }}
-          </p>
-          <p class="education-item-date">
-            {{ education.date }}
-          </p>
-        </div>
-      </li>
+    <li class="education-item reveal">
+      <div class="education-item-icon">
+        <i class="fa fa-graduation-cap"></i>
+      </div>
+      <div class="education-item-text">
+        <p class="education-item-name">{{ education.name }}</p>
+        <p class="education-item-degree">{{ education.degree }}</p>
+        <p class="education-item-date">{{ education.date }}</p>
+      </div>
+    </li>
     {% endfor %}
   </ul>
-</article>
+</section>

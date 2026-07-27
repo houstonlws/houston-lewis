@@ -1,0 +1,5 @@
+<nav class="sidebar-nav" aria-label="Page sections">
+  {% for item in site.data.navigation %}
+  <a href="{{ item.url }}" class="sidebar-nav-link">{{ item.name }}</a>
+  {% endfor %}
+</nav>

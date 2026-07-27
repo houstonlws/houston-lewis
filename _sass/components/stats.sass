@@ -1,0 +1,31 @@
+@use '../variables/colors' as *
+@use '../variables/sizes' as *
+@use '../utilities/components' as ui
+
+.stats
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 16px
+
+    @media (max-width: $bp-lg)
+      grid-template-columns: repeat(2, 1fr)
+
+    @media (max-width: $bp-sm)
+      grid-template-columns: 1fr
+
+  &-item
+    @include ui.surface-card($padding: 24px 20px)
+    display: flex
+    flex-direction: column
+    gap: 8px
+
+  &-value
+    font-family: 'Space Grotesk', sans-serif
+    font-size: $fs-1
+    font-weight: 700
+    color: $accent
+
+  &-label
+    font-size: $fs-5
+    color: $text-secondary

@@ -1,14 +1,11 @@
-<div class="skills panel">
-  <h2>Skills</h2>
-  <hr />
+<section class="skills section reveal" id="skills">
+  <h2 class="skills-title">Skills & Tools</h2>
   <div class="skills-list">
     {% for skill in site.data.skills %}
-    <div class="skills-item">
-      <div class="skills-item-icon">
-        <i class="{{ skill.class }}"></i>
-      </div>
-      <p class="skills-item-label">{{ skill.name }}</p>
+    <div class="skills-item reveal">
+      <i class="{{ skill.class }} skills-item-icon"></i>
+      <span class="skills-item-label">{{ skill.name }}</span>
     </div>
     {% endfor %}
   </div>
-</div>
+</section>

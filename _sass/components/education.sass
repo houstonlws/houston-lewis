@@ -1,34 +1,40 @@
-
 @use '../variables/colors' as colors
 @use '../variables/sizes' as sizes
 @use '../utilities/components' as ui
 
 .education
+  &-title
+    @include ui.section-heading
 
-    &-list
-        display: flex
-        flex-direction: row
-        list-style: none
-        padding: 0
-        gap: 15px
-        margin-bottom: 0
-        @media (max-width: sizes.$bp-lg)
-            padding-left: 0
-        @media (max-width: sizes.$bp-md)
-            flex-direction: column
+  &-list
+    display: flex
+    flex-direction: column
+    list-style: none
+    padding: 0
+    margin: 0
+    gap: 16px
 
-    &-item
-        display: flex
-        align-items: center
-        max-width: 405px
-        width: 100%
-        @include ui.card($bg: colors.$bg-2, $border: null, $shadow: sizes.$box-shadow-lg, $padding: 25px)
-        @media (max-width: sizes.$bp-lg)
-            max-width: 100%
+  &-item
+    @include ui.surface-card($padding: 20px 24px)
+    display: flex
+    align-items: flex-start
+    gap: 16px
 
-        &-icon
-            margin-right: 15px
-            @include ui.icon-badge($bg: colors.$bg-3, $color: colors.$text-color-2, $font-size: 35px)
+    &-icon
+      @include ui.icon-badge($size: 44px, $font-size: 18px)
 
-        & P
-            margin: 0
+    &-name
+      font-weight: 600
+      font-size: sizes.$fs-4
+      margin: 0 0 4px
+      color: colors.$text-primary
+
+    &-degree
+      font-size: sizes.$fs-5
+      color: colors.$text-secondary
+      margin: 0 0 4px
+
+    &-date
+      font-size: sizes.$fs-6
+      color: colors.$text-muted
+      margin: 0

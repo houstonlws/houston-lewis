@@ -3,157 +3,131 @@
 @use '../utilities/components' as ui
 
 .experience
-    max-height: 500px
-    overflow-y: hidden
-    position: relative
-    transition: max-height 0.5s ease
-    color: colors.$text-color-4
+  &-title
+    @include ui.section-heading
 
-    &-list
-        display: flex
-        flex-direction: column
-        list-style-type: none
-        margin: 25px auto 75px auto
-        padding-left: 35px
-        @media (max-width: sizes.$bp-lg)
-            padding-left: 0
+  &-grid
+    display: grid
+    grid-template-columns: 1fr
+    gap: 16px
 
-    &-expand
-        position: absolute
-        width: 100%
-        background-color: colors.$bg-1
-        border-top: colors.$border-1
-        text-align: center
-        left: 0
-        bottom: 0
-        z-index: 10
-        padding: 10px 0
-        cursor: pointer
+    @media (max-width: sizes.$bp-md)
+      grid-template-columns: 1fr
 
-        &::before
-            content: ''
-            position: absolute
-            left: 0
-            bottom: 45px
-            height: 100px
-            width: 100%
-            background: linear-gradient(#00000000, colors.$bg-1)
-            z-index: -1
-            pointer-events: none
+  &-card
+    @include ui.surface-card($padding: 0)
+    overflow: hidden
+    transition: border-color 0.2s ease
 
-        &:hover
-            background-color: colors.$bg-2
+    &:hover
+      border-color: rgba(colors.$accent, 0.25)
 
-    &-item
-        position: relative
-        margin-bottom: 1rem
-        display: flex
-        @include ui.card($bg: colors.$bg-2, $border: null, $shadow: sizes.$box-shadow-lg, $padding: 25px)
-        @media (max-width: sizes.$bp-lg)
-            flex-direction: column
-            gap: 10px
-            margin-left: 20px
-            padding: 20px 15px
+    &.is-open
+      border-color: rgba(colors.$accent, 0.4)
 
-        &::before
-            content: ''
-            position: absolute
-            left: -35px
-            top: 60px
-            width: 10px
-            height: 10px
-            border-radius: 50%
-            background-color: colors.$text-color-2
-            box-shadow: sizes.$box-shadow-lg
-            z-index: 2
-            @media (max-width: sizes.$bp-lg)
-                left: -25px
+      .experience-card-chevron
+        transform: rotate(180deg)
 
-        &::after
-            content: ''
-            position: absolute
-            left: -30px
-            top: 70px
-            width: 1px
-            height: calc(100% + 10px)
-            background-color: colors.$border-color
-            box-shadow: sizes.$box-shadow-lg
-            z-index: 1
-            @media (max-width: sizes.$bp-lg)
-                left: -20px
+    &-summary
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      gap: 16px
+      width: 100%
+      padding: 20px 24px
+      background: none
+      border: none
+      color: inherit
+      font: inherit
+      text-align: left
+      cursor: pointer
 
-        &:last-child::after
-            content: none
-            @media (max-width: sizes.$bp-lg)
-                content: ''
+      &:hover
+        .experience-card-chevron
+          color: colors.$accent
 
-        &-heading
-            padding: 5px 10px
-            min-width: 250px
-            width: 250px
-            background: colors.$bg-3
-            border-radius: sizes.$border-radius
-            box-shadow: sizes.$box-shadow
-            color: colors.$text-color-2
-            @media (max-width: sizes.$bp-lg)
-                width: auto
-                min-width: auto
-                margin-left: 0
+    &-glance
+      display: flex
+      flex-direction: column
+      gap: 8px
+      min-width: 0
 
-            & hr
-                margin: 1px
-            & h4
-                font-size: sizes.$fs-4
-                font-weight: bolder
-                margin-bottom: 0
-                color: colors.$text-color-2
-                padding: 2px 0
+    &-title
+      font-family: 'Space Grotesk', sans-serif
+      font-size: sizes.$fs-3
+      font-weight: 700
+      color: colors.$accent
+      line-height: 1.2
 
-                &.subtitle
-                    text-transform: uppercase
-                    font-size: sizes.$fs-5
-                    font-weight: 700
+    &-meta
+      font-size: sizes.$fs-5
+      color: colors.$text-secondary
 
-        &-description
-            margin-bottom: 10px
-            @media (max-width: sizes.$bp-lg)
-                padding-left: 10px
+    &-preview
+      display: flex
+      flex-wrap: wrap
+      gap: 6px
+      margin-top: 4px
 
-        &-label
-            @include ui.chip($bg: colors.$bg-3, $color: colors.$text-color-2, $radius: sizes.$border-radius, $padding: 5px 10px, $shadow: sizes.$box-shadow)
-            font-size: sizes.$fs-4
-            font-weight: bold
-            margin-left: 22px
-            @media (max-width: sizes.$bp-lg)
-                padding: 10px
-                margin-left: 0
+      &-tag
+        @include ui.chip($bg: colors.$bg-muted, $color: colors.$text-secondary, $padding: 3px 8px)
+        font-size: sizes.$fs-6
 
-            &::before
-                content: ''
-                position: absolute
-                left: 10px
-                top: 50%
-                transform: translateY(-50%)
-                width: 10px
-                height: 10px
-                box-shadow: sizes.$box-shadow-lg
+      &-more
+        @include ui.chip($bg: rgba(colors.$accent, 0.12), $color: colors.$accent, $padding: 3px 8px)
+        font-size: sizes.$fs-6
+        font-weight: 600
 
-        &-roles
-            display: flex
-            flex-direction: column
-            gap: 5px
-            margin-bottom: 10px
+    &-chevron
+      flex-shrink: 0
+      margin-top: 4px
+      color: colors.$text-muted
+      font-size: sizes.$fs-5
+      transition: transform 0.25s ease, color 0.2s ease
 
-        &-technologies
-            margin-top: 10px
-            display: flex
-            flex-wrap: wrap
-            list-style: none
-            gap: 10px
-            padding-left: 2rem
-            @media (max-width: sizes.$bp-lg)
-                padding-left: 0
+    &-details
+      padding: 0 24px 24px
+      border-top: colors.$border-1
+      color: colors.$text-secondary
+      font-size: sizes.$fs-5
+      line-height: 1.6
 
-            &-item
-                @include ui.chip($bg: colors.$bg-3, $radius: sizes.$border-radius-sm, $padding: 5px 10px, $shadow: sizes.$box-shadow)
-                text-align: center
+    &-description
+      padding-top: 16px
+      margin-bottom: 12px
+
+    &-label
+      font-size: sizes.$fs-6
+      font-weight: 600
+      color: colors.$text-muted
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      margin: 16px 0 8px
+
+    &-roles
+      display: flex
+      flex-direction: column
+      gap: 4px
+      padding-left: 20px
+      margin: 0 0 12px
+
+    &-technologies
+      display: flex
+      flex-wrap: wrap
+      gap: 8px
+      list-style: none
+      padding: 0
+      margin: 0
+
+      &-item
+        @include ui.chip($bg: colors.$bg-muted, $color: colors.$text-secondary, $padding: 4px 10px)
+        gap: 6px
+        font-size: sizes.$fs-6
+
+        i
+          font-size: sizes.$fs-5
+          color: colors.$accent
+
+@media (prefers-reduced-motion: reduce)
+  .experience-card-chevron
+    transition: none

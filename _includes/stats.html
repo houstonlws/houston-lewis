@@ -1,0 +1,10 @@
+<section class="stats section reveal">
+  <div class="stats-grid">
+    {% for stat in site.data.stats %}
+    <div class="stats-item reveal">
+      <span class="stats-value">{{ stat.value }}</span>
+      <span class="stats-label">{{ stat.label }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>

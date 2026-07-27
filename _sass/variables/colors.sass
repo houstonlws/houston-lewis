@@ -1,50 +1,30 @@
-// Background Colors
+// Page & surfaces
+$bg-page: #101010
+$bg-surface: #191919
+$bg-elevated: #272727
+$bg-muted: #303030
 
-$bg-0: #090909
-$bg-1: #1b1b1b
-$bg-2: #333
-$bg-3: #4d4d4d
-$bg-4: #666
-$bg-5: #808080
-$bg-6: #999
-$bg-7: #b3b3b3
-$bg-8: #cccccc
-$bg-9: #e6e6e6
-$bg-10: #f2f2f2
-$bg-11: #f9f9f9
-$bg-12: #ffffff
+// Legacy aliases (used by existing component refs during migration)
+$bg-0: $bg-page
+$bg-1: $bg-surface
+$bg-2: $bg-elevated
+$bg-3: $bg-muted
 
-// Text colors
+// Text
+$text-primary: #ffffff
+$text-secondary: #999999
+$text-muted: #666666
+$text-color: $text-primary
+$text-color-2: $text-secondary
+$text-color-3: $text-muted
+$text-color-4: #bfbfbf
 
-$text-color: #ffffff
-$text-color-2: #b3b3b3
-$text-color-3: #999
-$text-color-4: #cccccc
-
-$text-color-inverse: #000000
-$text-color-inverse-2: #333
-$text-color-inverse-3: #666
-$text-color-inverse-4: #808080
-
-// Border colors
-
-$border-color-1: #333
-$border-color-2: #4d4d4d
-$border-color-3: #666
-$border-color-4: #808080
-$border-color-5: #999
-$border-color-6: #b3b3b3
-$border-color-7: #cccccc
-$border-color-8: #e6e6e6
-$border-color-9: #f2f2f2
-$border-color-10: #f9f9f9
-
-// Primary and secondary colors
-
-$primary-color: #abc6bc
-$secondary-color: #adb5bd
-$border-color: #4d4d4d
+// Accent
+$accent: #28e98c
+$primary-color: $accent
+$secondary-color: $text-secondary
 
 // Borders
-
-$border-1: 1px solid $border-color
+$border-subtle: rgba(255, 255, 255, 0.08)
+$border-color: $border-subtle
+$border-1: 1px solid $border-subtle

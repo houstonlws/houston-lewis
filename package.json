@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "sass": "sass --load-path=_sass assets/css/styles.sass assets/css/styles.css",
+    "sass:watch": "sass --watch --load-path=_sass assets/css/styles.sass assets/css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}

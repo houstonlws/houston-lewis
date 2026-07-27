@@ -1,7 +1,7 @@
 projects:
   - name: pbm
     title: Print Bill Master
-    description: Print Bill Master is a microservice oriented application that manages printers, printer metrics, billing and more!
+    description: A containerized microservices platform for print billing and device metrics — designed with clear service boundaries, Docker-based deployment, and infrastructure choices that mirror production cloud patterns. Built outside of client work to demonstrate architecture discipline and end-to-end systems delivery.
     image: /assets/images/pbm-thumbnail.png
-    tags: [Java 17, React, TypeScript, Docker, MySQL]
-    link: https://github.com/houstonlws/PBM.git
+    tags: [Microservices, Java 17, Docker, MySQL, REST APIs]
+    link: https://github.com/houstonlws/PBM

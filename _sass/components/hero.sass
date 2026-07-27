@@ -1,0 +1,36 @@
+@use '../variables/colors' as *
+@use '../variables/sizes' as *
+
+.hero
+  padding-top: 8px
+
+  &-greeting
+    color: $accent
+    font-size: $fs-4
+    font-weight: 500
+    margin: 0 0 16px
+
+  &-title
+    font-size: $fs-display
+    font-weight: 700
+    line-height: 1.1
+    margin: 0 0 8px
+
+    @media (max-width: $bp-md)
+      font-size: $fs-hero
+
+  &-location
+    font-size: $fs-2
+    color: $text-secondary
+    font-weight: 500
+    margin: 0 0 24px
+
+    @media (max-width: $bp-md)
+      font-size: $fs-3
+
+  &-bio
+    color: $text-secondary
+    font-size: $fs-4
+    line-height: 1.7
+    max-width: 640px
+    margin: 0

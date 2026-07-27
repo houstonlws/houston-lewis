@@ -3,71 +3,73 @@
 @use '../utilities/components' as ui
 
 .portfolio
+  &-title
+    @include ui.section-heading
 
-    &-grid
+  &-grid
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px
 
-        display: flex
-        justify-content: left
-        gap: 20px
-        flex-wrap: wrap
+    @media (max-width: sizes.$bp-md)
+      grid-template-columns: 1fr
 
-        @media (max-width: sizes.$bp-md)
-            gap: 25px
+  &-item
+    @include ui.surface-card($padding: 0)
+    overflow: hidden
+    transition: transform 0.25s ease, border-color 0.25s ease
 
-    &-thumbnail
+    &:hover
+      transform: translateY(-4px)
+      border-color: rgba(colors.$accent, 0.3)
 
-        width: 100%
-        height: 200px
-        object-fit: cover
+    &-hidden
+      display: none
 
-    &-link
+  &-link
+    text-decoration: none
+    color: colors.$text-primary
+    display: block
 
-        text-decoration: none
-        font-weight: bold
-        transition: color 0.3s ease
-        color: colors.$text-color
+  &-thumbnail
+    width: 100%
+    height: 200px
+    object-fit: cover
+    transition: transform 0.3s ease
 
-    &-content
+  &-item:hover &-thumbnail
+    transform: scale(1.03)
 
-        padding: 15px
+  &-content
+    padding: 20px
 
-    &-item
-        @include ui.card($bg: colors.$bg-2, $border: colors.$border-1, $shadow: sizes.$box-shadow, $padding: 0)
-        overflow: hidden
-        max-width: 270px
-        display: flex
-        flex-direction: column
+  &-item-title
+    font-size: sizes.$fs-3
+    font-weight: 600
+    margin: 0 0 8px
 
-        @media (max-width: sizes.$bp-xl)
+  &-tags
+    font-size: sizes.$fs-6
+    color: colors.$accent
+    margin: 0 0 8px
 
-            max-width: 285px
+  &-description
+    font-size: sizes.$fs-5
+    color: colors.$text-secondary
+    margin: 0
+    line-height: 1.5
 
-        @media (max-width: sizes.$bp-lg)
+  &-load-more
+    @include ui.btn-outline
+    margin: 24px auto 0
+    display: block
 
-            max-width: 315px
+    &.hidden
+      display: none
 
-        @media (max-width: sizes.$bp-md)
+@media (prefers-reduced-motion: reduce)
+  .portfolio-item:hover
+    transform: none
 
-            max-width: 100%
-
-        &-image
-
-            width: 100%
-            height: 200px
-            object-fit: cover
-            border-radius: 10px 10px 0 0
-
-        &-content
-
-            padding: 15px
-
-        &-title
-
-            font-weight: bold
-            margin: 10px 0
-            margin-bottom: 0.5rem
-
-        &-description
-
-            font-size: 0.9rem
-            margin-bottom: 1rem
+  .portfolio-item:hover .portfolio-thumbnail
+    transform: none

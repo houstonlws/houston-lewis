@@ -2,159 +2,104 @@
 @use '../variables/sizes' as *
 @use '../utilities/components' as ui
 
-.social-icons
-  @media (max-width: $bp-xl)
-    margin-top: 25px
-  & a
-    color: $text-color
-    padding: 0 10px
-    text-decoration: none
-
 .sidebar
-  border-radius: $border-radius
-  display: flex
-  align-items: center
-  flex-direction: column
-  text-align: center
-  height: max-content
+  width: $sidebar-width
+  flex-shrink: 0
   position: sticky
-  top: 25px
-  overflow: hidden
+  top: 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  gap: 24px
 
   @media (max-width: $bp-xl)
-    width: $container-lg
-    align-items: flex-start
+    width: 100%
     position: relative
     top: 0
-    text-align: left
-  @media (max-width: $bp-lg)
-    width: $container-md
-  @media (max-width: $bp-md)
-    width: $container-sm
-  @media (max-width: $bp-sm)
-    width: $container-xs
 
-  &-logo
-    max-width: 100px
-    width: 100%
-    margin: 15px auto 30px auto
-    @media (max-width: $bp-xl)
-      max-width: 60px
-      margin-right: 20px
-      margin-bottom: 0
-      margin-top: 0
-
-  &-title
-    font-size: $fs-2
-    font-weight: bold
-    margin: 0
-    z-index: 2
-    position: relative
-    @media (max-width: $bp-sm)
-      font-size: 24px
-
-  &-description
+  &-profile
     display: flex
     flex-direction: column
-    @media (max-width: $bp-xl)
-      flex-direction: row
-      gap: 10px
-    @media (max-width: $bp-sm)
-      flex-direction: column
-      gap: 0
+    align-items: center
+    gap: 12px
 
-    &-item
-      max-width: 300px
-      margin: 0
-      @media (max-width: $bp-sm)
-        font-size: $fs-5
-
-  &-toggle
-    margin-top: 25px
-    display: none
-    cursor: pointer
+  &-avatar
+    width: 120px
+    height: 120px
     border-radius: 50%
-    z-index: 1
-    @media (max-width: $bp-xl)
-      display: block
-      position: absolute
-      padding: 15px 20px
-      right: 0
-      top: 0
-      &:hover::before
-        content: ''
-        position: absolute
-        left: 0
-        top: 0
-        border-radius: 50%
-        background: $bg-2
-        width: 50px
-        height: 50px
-        z-index: -1
-        @media (max-width: $bp-sm)
-          top: 4px
-          left: 4px
-          width: 35px
-          height: 35px
-      @media (max-width: $bp-sm)
-        padding: 10px 15px
-
-  &-content
-    width: 100%
-    @media (max-width: $bp-xl)
-      height: 0
-      overflow: hidden
-      transition: height .25s ease-in-out
-      &.open
-        margin-top: 25px
-        height: auto
-        gap: 15px
-        transition: margin 0.5s ease
-
-  &-header
-    display: flex
-    justify-content: center
-    flex-direction: column
-    transition: all ease 1s
-    @media (max-width: $bp-xl)
-      flex-direction: row
-      align-items: center
-      &.open
-        padding-bottom: 15px
-
-  &-list
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
-    gap: 15px
-    @media (min-width: $bp-md) and (max-width: $bp-xl)
-      flex-direction: row
-
-  &-item
+    border: 2px solid $border-subtle
+    padding: 8px
     display: flex
     align-items: center
-    cursor: pointer
-    gap: 15px
-    text-align: left
-    @include ui.card($bg: $bg-2, $border: null, $shadow: $box-shadow, $padding: $padding)
+    justify-content: center
+    background: $bg-elevated
 
-    @media (max-width: $bp-xl)
-      flex: 0 0 calc(50% - 10px)
+    &-img
+      width: 64px
+      height: 64px
+      object-fit: contain
 
-    & a
-      color: $text-color
+  &-status
+    @include ui.pill-badge
+
+    &-dot
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: $accent
+      animation: pulse 2s ease-in-out infinite
+
+  &-name
+    font-size: $fs-2
+    font-weight: 700
+    margin: 0
+
+  &-role
+    color: $text-secondary
+    font-size: $fs-5
+    margin: 0
+
+  &-nav
+    display: flex
+    flex-direction: column
+    gap: 4px
+    width: 100%
+
+    &-link
+      color: $text-secondary
+      font-size: $fs-6
+      font-weight: 500
+      padding: 8px 12px
+      border-radius: 8px
       text-decoration: none
+      transition: color 0.2s ease, background-color 0.2s ease
 
-    &-icon
-      display: flex
-      align-items: center
-      justify-content: center
-      font-size: 26px
+      &:hover
+        color: $text-primary
+        background: rgba($accent, 0.08)
 
-    & p
-      margin: 0
+  &-actions
+    display: flex
+    flex-direction: column
+    gap: 12px
+    width: 100%
 
-  @media (max-width: $bp-xl)
+  &-btn
+    width: 100%
 
-    & hr
-      display: none
+    &-primary
+      @include ui.btn-primary
+
+    &-outline
+      @include ui.btn-outline
+
+@keyframes pulse
+  0%, 100%
+    opacity: 1
+  50%
+    opacity: 0.5
+
+@media (prefers-reduced-motion: reduce)
+  .sidebar-status-dot
+    animation: none

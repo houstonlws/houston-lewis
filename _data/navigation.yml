@@ -1,4 +1,8 @@
-- name: About
-  url: /
-- name: Portfolio
-  url: /portfolio.html
+- name: Experience
+  url: "#experience"
+- name: Certifications
+  url: "#certifications"
+- name: Skills
+  url: "#skills"
+- name: Contact
+  url: "#contact"

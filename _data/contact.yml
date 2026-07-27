@@ -1,0 +1,14 @@
+heading: "Let's connect"
+items:
+  - label: Email
+    value: houstonhvrd@gmail.com
+    url: mailto:houstonhvrd@gmail.com
+    icon: fa fa-envelope
+  - label: LinkedIn
+    value: houstonlewis
+    url: https://www.linkedin.com/in/houstonlewis
+    icon: fa-brands fa-linkedin
+  - label: GitHub
+    value: houstonlws
+    url: https://github.com/houstonlws
+    icon: fa-brands fa-github

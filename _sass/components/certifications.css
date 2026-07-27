@@ -1,52 +1,61 @@
+.certifications-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 25px;
+}
 .certifications-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
-  gap: 15px;
-  margin-bottom: 0;
   padding: 0;
-}
-@media (max-width: 992px) {
-  .certifications-list {
-    padding-left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .certifications-list {
-    flex-direction: column;
-  }
+  margin: 0;
+  gap: 16px;
 }
 .certifications-item {
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 20px 24px;
   display: flex;
-  align-items: center;
-  max-width: 405px;
-  width: 100%;
+  align-items: flex-start;
+  gap: 16px;
   cursor: pointer;
-  background-color: #333;
-  border-radius: 10px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  padding: 25px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
-@media (max-width: 992px) {
-  .certifications-item {
-    max-width: 100%;
-  }
+.certifications-item:hover {
+  border-color: rgba(40, 233, 140, 0.4);
+  transform: translateY(-2px);
 }
 .certifications-item-icon {
-  margin-right: 15px;
-  width: 60px;
-  height: 60px;
+  width: 44px;
+  height: 44px;
   aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #4d4d4d;
-  color: #b3b3b3;
+  background: #303030;
+  color: #28e98c;
   border-radius: 50%;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  font-size: 35px;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: none;
+  font-size: 18px;
+  flex-shrink: 0;
 }
-.certifications-item P {
+.certifications-item-name {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 0 4px;
+  color: #ffffff;
+}
+.certifications-item-description {
+  font-size: 14px;
+  color: #999999;
   margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certifications-item:hover {
+    transform: none;
+  }
 }/*# sourceMappingURL=certifications.css.map */

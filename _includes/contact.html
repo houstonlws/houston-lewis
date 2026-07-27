@@ -1,0 +1,11 @@
+<section class="contact section" id="contact">
+  <h2 class="contact-title reveal">{{ site.data.contact.heading }}</h2>
+  <div class="contact-grid">
+    {% for item in site.data.contact.items %}
+    <a href="{{ item.url }}" class="contact-card reveal" target="_blank" rel="noopener noreferrer">
+      <span class="contact-card-label">{{ item.label }}</span>
+      <span class="contact-card-value">{{ item.value }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

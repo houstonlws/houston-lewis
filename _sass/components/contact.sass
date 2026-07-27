@@ -1,0 +1,39 @@
+@use '../variables/colors' as *
+@use '../variables/sizes' as *
+@use '../utilities/components' as ui
+
+.contact
+  &-title
+    @include ui.section-heading
+
+  &-grid
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 16px
+
+    @media (max-width: $bp-md)
+      grid-template-columns: 1fr
+
+  &-card
+    @include ui.surface-card($padding: 24px)
+    display: flex
+    flex-direction: column
+    gap: 8px
+    text-decoration: none
+    transition: border-color 0.2s ease, transform 0.2s ease
+
+    &:hover
+      border-color: rgba($accent, 0.4)
+      transform: translateY(-2px)
+      color: inherit
+
+    &-label
+      font-size: $fs-6
+      color: $text-muted
+      text-transform: uppercase
+      letter-spacing: 0.05em
+
+    &-value
+      font-size: $fs-4
+      font-weight: 600
+      color: $text-primary

@@ -1,27 +1,25 @@
-<div class="portfolio panel">
+<section class="portfolio section reveal" id="projects">
   <h2 class="portfolio-title">Projects</h2>
-  <hr />
-  <div class="portfolio-grid">
+  <div class="portfolio-grid" id="portfolio-grid">
     {% for project in site.data.portfolio.projects %}
-    <div class="portfolio-item">
-      <a
-        href="{{ project.link }}"
-        class="portfolio-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+    <article class="portfolio-item{% if forloop.index > 4 %} portfolio-item-hidden{% endif %} reveal" data-index="{{ forloop.index }}">
+      <a href="{{ project.link }}" class="portfolio-link" target="_blank" rel="noopener noreferrer">
         <img
           src="{{ site.baseurl }}{{ project.image }}"
           alt="{{ project.title }}"
-          class="portfolio-thumbnail"
-        />
+          class="portfolio-thumbnail" />
         <div class="portfolio-content">
           <h4 class="portfolio-item-title">{{ project.title }}</h4>
+          {% if project.tags %}
+          <p class="portfolio-tags">{{ project.tags | join: ' · ' }}</p>
+          {% endif %}
           <p class="portfolio-description">{{ project.description }}</p>
         </div>
       </a>
-    </div>
-
+    </article>
     {% endfor %}
   </div>
-</div>
+  {% if site.data.portfolio.projects.size > 4 %}
+  <button class="portfolio-load-more" id="portfolio-load-more" type="button">Load More</button>
+  {% endif %}
+</section>

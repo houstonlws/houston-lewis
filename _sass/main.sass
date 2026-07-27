@@ -1,35 +1,60 @@
+@use 'sass:color'
 @use 'variables/sizes' as *
 @use 'variables/colors' as *
 
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+html
+  scroll-behavior: smooth
+
+h1, h2, h3, h4, h5, h6
+  font-family: 'Space Grotesk', sans-serif
+  color: $text-primary
+  margin-top: 0
+
 h1
-  font-size: $fs-1
-  @media  ( max-width: $bp-md )
-    font-size: $fs-2
+  font-size: $fs-hero
+  @media (max-width: $bp-md)
+    font-size: $fs-1
+
 h2
-  font-size: $fs-2
+  font-size: $fs-1
+
 h3
   font-size: $fs-2
+
 h4
-  font-size: $fs-4
+  font-size: $fs-3
+
 h5
+  font-size: $fs-4
+
+h6
   font-size: $fs-5
-h6
-  font-size: $fs-6
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-  font-family: 'Montserrat', sans-serif
-  color: $text-color
 
 body
-  background-color: $bg-0,
-  font-family: 'Lato', sans-serif
-  color: $text-color
-  fill: $text-color
-  height: 100vh
+  background-color: $bg-page
+  font-family: 'Inter', sans-serif
+  color: $text-primary
+  fill: $text-primary
+  min-height: 100vh
+  margin: 0
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
 
   hr
-    width: 100%
+    border: none
+    border-top: $border-1
+    margin: $margin-xl 0
+
+a
+  color: $accent
+  text-decoration: none
+  &:hover
+    color: color.adjust($accent, $lightness: 8%)
+
+.section
+  margin-bottom: $section-gap
