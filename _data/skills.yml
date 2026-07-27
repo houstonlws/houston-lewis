@@ -1,7 +1,7 @@
-- name: Google Cloud
-  class: devicon-google-plain
 - name: AWS
   class: devicon-amazonwebservices-plain-wordmark
+- name: Google Cloud
+  class: devicon-google-plain
 - name: Terraform
   class: devicon-terraform-plain
 - name: CI/CD
