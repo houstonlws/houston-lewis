@@ -1,34 +1,37 @@
 - date: 10/2025 – Present
   title: Senior Tech Analyst
   company: Infosys
-  description: I analyze and improve AWS-based logistics and billing systems for a large enterprise client — focusing on how data moves, where things break, and what needs to change to keep the platform reliable and aligned with business goals.
+  description: I develop and improve Java/Spring Boot microservices for a large enterprise logistics and billing platform — shipping production code while analyzing how data moves, where things break, and what needs to change to keep the platform reliable and aligned with business goals.
   roles:
-    - Analyze freight invoice ingestion and pub/sub messaging workflows to identify bottlenecks and reliability gaps
-    - Design and maintain AWS pub/sub and queue processing pipelines end to end, applying proven integration and messaging patterns
+    - Develop and maintain Java/Spring Boot microservices — REST APIs, service integration, and production fixes across the billing and logistics platform
+    - Build and extend Spring Batch jobs and event-driven processing alongside pub/sub and queue pipelines
+    - Analyze freight invoice ingestion and messaging workflows to identify bottlenecks — then implement the code and infra changes to resolve them
     - Manage CI/CD pipelines and infrastructure changes with Terraform, following cloud and deployment best practices
     - Support operational tooling that gives stakeholders visibility into shipment and billing data
     - Monitor platform health in Splunk and align technical improvements with business priorities
   technologies:
-    - name: AWS
-      class: devicon-amazonwebservices-plain
-    - name: CI/CD
-      class: fa-solid fa-cogs
-    - name: Terraform
-      class: devicon-terraform-plain
-    - name: Docker
-      class: devicon-docker-plain
-    - name: Jenkins
-      class: devicon-jenkins-plain
-    - name: Kafka
-      class: devicon-apachekafka-plain
-    - name: Splunk
-      class: fa-solid fa-chart-line
     - name: Java
       class: devicon-java-plain
     - name: Spring Boot
       class: devicon-spring-plain
     - name: Spring Batch
       class: devicon-spring-plain
+    - name: Microservices
+      class: fa fa-server
+    - name: AWS
+      class: devicon-amazonwebservices-plain
+    - name: Kafka
+      class: devicon-apachekafka-plain
+    - name: Terraform
+      class: devicon-terraform-plain
+    - name: Docker
+      class: devicon-docker-plain
+    - name: Jenkins
+      class: devicon-jenkins-plain
+    - name: CI/CD
+      class: fa-solid fa-cogs
+    - name: Splunk
+      class: fa-solid fa-chart-line
     - name: Python
       class: devicon-python-plain
     - name: React
@@ -37,15 +40,14 @@
 - date: 06/2021 – 10/2025
   title: Senior Full Stack Developer
   company: Infosys
-  description: Over four years at Infosys, I grew from building services to shaping how systems are designed and delivered — working on microservice architectures, AWS cloud deployments, and the integration patterns that keep platforms maintainable at scale. Moved into Senior Tech Analyst in October 2025 to focus on platform analysis and cloud architecture.
+  description: Over four years at Infosys, I built and maintained Java/Spring Boot microservices at scale — delivering REST APIs, full-stack features, and AWS cloud deployments while shaping integration patterns that keep distributed platforms maintainable. Moved into Senior Tech Analyst in October 2025 to combine hands-on development with platform analysis and cloud architecture.
   roles:
-    - Contributed to microservice system design, REST API contracts, and service integration patterns across distributed systems
+    - Built and maintained Java/Spring Boot microservices with PostgreSQL backends and REST API contracts
+    - Delivered full-stack features — Spring Boot services paired with React, Vue, and Angular front ends
+    - Owned service performance, reliability, and maintainability in production AWS environments
     - Deployed and maintained applications on AWS with increasing ownership of CI/CD and infrastructure workflows
-    - Improved existing services for performance, reliability, and long-term maintainability in production environments
     - Partnered on operational and stakeholder-facing tooling to support business workflows and system visibility
   technologies:
-    - name: AWS
-      class: devicon-amazonwebservices-plain
     - name: Java
       class: devicon-java-plain
     - name: Spring Boot
@@ -58,6 +60,8 @@
       class: devicon-react-plain
     - name: TypeScript
       class: devicon-typescript-plain
+    - name: AWS
+      class: devicon-amazonwebservices-plain
     - name: GitHub
       class: devicon-github-plain
     - name: Vue
