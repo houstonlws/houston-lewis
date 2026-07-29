@@ -1,8 +1,8 @@
 - value: Java & Spring Boot
   label: Primary Stack
+- value: AWS & GCP
+  label: Cloud Platforms
 - value: "3"
-  label: Cloud Certifications
+  label: Certifications
 - value: 5+
   label: Years Building Production Systems
-- value: 4+
-  label: Years at Infosys
