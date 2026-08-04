@@ -7,6 +7,7 @@
     - Build and extend Spring Batch jobs and event-driven processing, including pub/sub consumers using Kafka and the AWS SDK in Java and Python
     - Analyze freight invoice ingestion and messaging workflows to identify bottlenecks — then implement the code and infra changes to resolve them
     - Manage CI/CD pipelines and infrastructure changes with Terraform, following cloud and deployment best practices
+    - Operate platform and cloud resources via CLI — AWS CLI for resource actions, Terraform commands for infrastructure changes, and Python scripts for operational workflows
     - Utilize AI-assisted workflows to reduce delivery time on development, analysis, and operational tasks
     - Support operational tooling that gives stakeholders visibility into shipment and billing data
     - Monitor platform health in Splunk and align technical improvements with business priorities
