@@ -4,9 +4,10 @@
   description: I develop and improve Java/Spring Boot microservices for a large enterprise logistics and billing platform — shipping production code while analyzing how data moves, where things break, and what needs to change to keep the platform reliable and aligned with business goals.
   roles:
     - Develop and maintain Java/Spring Boot microservices — REST APIs, service integration, and production fixes across the billing and logistics platform
-    - Build and extend Spring Batch jobs and event-driven processing alongside pub/sub and queue pipelines
+    - Build and extend Spring Batch jobs and event-driven processing, including pub/sub consumers using Kafka and the AWS SDK in Java and Python
     - Analyze freight invoice ingestion and messaging workflows to identify bottlenecks — then implement the code and infra changes to resolve them
     - Manage CI/CD pipelines and infrastructure changes with Terraform, following cloud and deployment best practices
+    - Utilize AI-assisted workflows to reduce delivery time on development, analysis, and operational tasks
     - Support operational tooling that gives stakeholders visibility into shipment and billing data
     - Monitor platform health in Splunk and align technical improvements with business priorities
   technologies:
